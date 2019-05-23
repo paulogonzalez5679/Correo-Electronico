@@ -4,15 +4,12 @@ function buscarPorRemitente() {
     if (rem == "") {
         document.getElementById("correo").innerHTML = "";
         if (window.XMLHttpRequest) {
-            //code for actuar browsers
             xmlhttp = new XMLHttpRequest();
         } else {
-            //code for old browsers
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                //alert("llegue");
                 document.getElementById("correo").innerHTML = this.responseText;
             }
         };
@@ -20,15 +17,12 @@ function buscarPorRemitente() {
         xmlhttp.send();
     } else {
         if (window.XMLHttpRequest) {
-            //code for actuar browsers
             xmlhttp = new XMLHttpRequest();
         } else {
-            //code for old browsers
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                //alert("llegue");
                 document.getElementById("correo").innerHTML = this.responseText;
             }
         };
@@ -43,15 +37,12 @@ function buscarPorDestinatario() {
     if (dest == "") {
         document.getElementById("correo").innerHTML = "";
         if (window.XMLHttpRequest) {
-            //code for actuar browsers
             xmlhttp = new XMLHttpRequest();
         } else {
-            //code for old browsers
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                //alert("llegue");
                 document.getElementById("correo").innerHTML = this.responseText;
             }
         };
@@ -59,15 +50,12 @@ function buscarPorDestinatario() {
         xmlhttp.send();
     } else {
         if (window.XMLHttpRequest) {
-            //code for actuar browsers
             xmlhttp = new XMLHttpRequest();
         } else {
-            //code for old browsers
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                //alert("llegue");
                 document.getElementById("correo").innerHTML = this.responseText;
             }
         };

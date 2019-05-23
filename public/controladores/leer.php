@@ -98,8 +98,7 @@
             $resultMsg = $conn->query($sqlMsg);
 
             if ($resultMsg->num_rows > 0) { 
-                $row = mysqli_fetch_assoc($resultMsg);
-                //while($row = $resultMsg->fetch_assoc()) {                      
+                $row = mysqli_fetch_assoc($resultMsg);           
                     echo "<tr>";
                         echo "<th>Fecha</th>";
                         echo "<td>" . $row['men_fecha'] . "</td>";
@@ -116,7 +115,6 @@
                         echo "<th>Contenido</th>";
                         echo "<td>" . $row['men_contenido'] . "</td>";
                     echo "</tr>";
-                //}
 
             } else { 
 
@@ -134,15 +132,5 @@
     
     <br>
 
-    <footer>
-        &#8226; &nbsp; Pedro Jose Ortiz Solis &nbsp; &#8226; 
-        &nbsp; Universidad Politécnica Salesiana &nbsp; &#8226;
-        <a href="mailto:portizs2@est.ups.edu.ec">portizs2@est.ups.edu.ec</a> &nbsp; &#8226;
-        <a href="tel:+593991936486">(099) 193-6486</a> &#8226;
-        <br>
-        &#8226; &nbsp; &#9400; Todos los derechos reservados. &nbsp; &#8226;
-    </footer>
-
- 
 </body> 
 </html> 

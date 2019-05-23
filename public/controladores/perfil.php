@@ -64,8 +64,7 @@
             
 
             if ($resultUsuario->num_rows > 0) {
-                $row = mysqli_fetch_assoc($resultUsuario);
-                //while($row = $resultMsg->fetch_assoc()) {                      
+                $row = mysqli_fetch_assoc($resultUsuario);                    
                     echo "<tr>";
                         echo "<th>Foto de Perfil: </th>";
                         echo "<td>" . "<img src= $foto >" . "</td>";
@@ -90,7 +89,6 @@
                         echo "<td class='modificar'> <a href='modificar.php'> Modificar </a> </td>";  
                         echo "<td class='modificar'> <a href='contrasena.php'> Cambiar Contrasena </a> </td>";               
                     echo "</tr>"; 
-                //}
 
             } else { 
 
@@ -107,15 +105,6 @@
 
 
     <br>
-
-    <footer>
-        &#8226; &nbsp; Pedro Jose Ortiz Solis &nbsp; &#8226; 
-        &nbsp; Universidad Politécnica Salesiana &nbsp; &#8226;
-        <a href="mailto:portizs2@est.ups.edu.ec">portizs2@est.ups.edu.ec</a> &nbsp; &#8226;
-        <a href="tel:+593991936486">(099) 193-6486</a> &#8226;
-        <br>
-        &#8226; &nbsp; &#9400; Todos los derechos reservados. &nbsp; &#8226;
-    </footer>
 
 </body> 
 </html> 
