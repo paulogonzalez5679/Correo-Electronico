@@ -18,6 +18,7 @@
     $admin = $conn->query($sqlA);
     $user = $conn->query($sqlU);
 
+
     $resultUsuario=$conn->query($sql);
     $rowUsuario= mysqli_fetch_assoc($resultUsuario);
 
@@ -33,12 +34,14 @@
 
         if ($result->num_rows > 0 && $admin->num_rows > 0) {  
             session_start();
+            //$user = $user->fetch_assoc(); 
             $_SESSION['id']=$id;             
             $_SESSION['isLogged'] = TRUE; 
             $_SESSION["rol"] = "admin";     
             header("Location: ../../admin/controladores/index.php"); 
         } else if ($result->num_rows > 0 && $user->num_rows > 0) {
-            session_start(); 
+            session_start();
+            //$user = $user->fetch_assoc(); 
             $_SESSION['id']=$id;             
             $_SESSION['isLogged'] = TRUE;
             $_SESSION["rol"] = "user";    

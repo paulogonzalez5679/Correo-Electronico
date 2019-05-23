@@ -5,34 +5,40 @@
     <script type="text/javascript" src="../js/validacion.js"></script>
     <link rel="stylesheet" href="styles/style.css" type="text/css"/>
 </head> 
-<body id="fondo"> 
+<body> 
+    
+    
+
     <a href='login.html'>Tienes ya una cuenta? ir a Iniciar Sesion</a>
-    <br>
-    <form   id="nuevo_usuario" method="POST" onsubmit="return validarCamposObligatorios()" action="../controladores/crear_usuario.php" enctype="multipart/form-data" >
+
+    <form id="nuevo_usuario" method="POST" onsubmit="return validarCamposObligatorios()" action="../controladores/crear_usuario.php" enctype="multipart/form-data" >
  
         <label for="nombres">Nombres (*)</label> 
-        <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres..." required>
+        <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres..." >
         <span id="mensajeNombres" class="error"> </span>
         <br> 
  
         <label for="apellidos">Apelidos (*)</label> 
-        <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos..." required >
+        <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos..." >
         <span id="mensajeApellidos" class="error"> </span>
         <br>
  
         <label for="correo">Correo electrónico (*)</label> 
-        <input type="email" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico ..." required >
+        <input type="email" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico ..." >
         <span id="mensajeCorreo" class="error"> </span>
         <br> 
  
         <label for="contrasena">Contraseña (*)</label> 
-        <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña ..." required>
+        <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contraseña ..." >
         <span id="mensajeContrasena" class="error"> </span>
         <br>
 
         <label for="foto">Avatar - Foto de perfil</label> 
         <input type="file" id="foto" name="foto" value="" placeholder="foto" > 
         <br> 
+ 
+      
+
         <input type="submit" id="crear" name="crear" value="Aceptar" /> 
         <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />     
         

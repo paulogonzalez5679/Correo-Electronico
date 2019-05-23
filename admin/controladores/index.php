@@ -115,7 +115,7 @@
             } else { 
 
                 echo "<tr>";                 
-                echo "<td colspan='4'> No hay resultados </td>";                 
+                echo "<td colspan='4'> No hay resultados de la busqueda </td>";                 
                 echo "</tr>"; 
  
             }
@@ -127,6 +127,8 @@
     </table>
 
     <br>
+
+   
 
 </body> 
 </html> 

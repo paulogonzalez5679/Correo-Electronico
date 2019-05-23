@@ -33,9 +33,8 @@
 
         $sqlMsg = "INSERT INTO mensaje VALUES (0, $id, $idDest, '$asunto', '$mensaje', null, 0 )";
 
-        if ($conn->query($sqlMsg) === TRUE) {  
-            alert("Todos los campos son obligatorios");           
-            echo "<p>Se ha enviado su mensaje correctamente!!!</p>" ;      
+        if ($conn->query($sqlMsg) === TRUE) {             
+            echo "<p>Se ha enviado su mensaje correctamente!!!</p>";      
         } else {             
             echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>";             
         } 
@@ -99,7 +98,8 @@
             $resultMsg = $conn->query($sqlMsg);
 
             if ($resultMsg->num_rows > 0) { 
-                $row = mysqli_fetch_assoc($resultMsg);           
+                $row = mysqli_fetch_assoc($resultMsg);
+                //while($row = $resultMsg->fetch_assoc()) {                      
                     echo "<tr>";
                         echo "<th>Fecha</th>";
                         echo "<td>" . $row['men_fecha'] . "</td>";
@@ -116,6 +116,7 @@
                         echo "<th>Contenido</th>";
                         echo "<td>" . $row['men_contenido'] . "</td>";
                     echo "</tr>";
+                //}
 
             } else { 
 
@@ -133,5 +134,8 @@
     
     <br>
 
+   
+
+ 
 </body> 
 </html> 

@@ -7,7 +7,7 @@
 <body> 
  
     <?php         
-        //incluir conexión a la base de datos         
+             
         include '../../config/conexionBD.php';                 
  
         $nombres = isset($_POST["nombres"]) ? mb_strtoupper(trim($_POST["nombres"]), 'UTF-8') : null; 
@@ -33,6 +33,8 @@
                 echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>"; 
             }             
         } 
+         
+        
         $conn->close();         echo "<a href='../vista/crear_usuario.html'>Regresar</a>"; 
     ?> 
  

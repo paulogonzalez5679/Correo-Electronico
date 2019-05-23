@@ -27,7 +27,7 @@ div.img span {
     display:table-footer-group;
     margin:0;
     background:#772626;
-    color:white;
+    color: gray;
     padding:5px;
     text-align:center;
 }

@@ -64,7 +64,8 @@
             
 
             if ($resultUsuario->num_rows > 0) {
-                $row = mysqli_fetch_assoc($resultUsuario);                    
+                $row = mysqli_fetch_assoc($resultUsuario);
+                //while($row = $resultMsg->fetch_assoc()) {                      
                     echo "<tr>";
                         echo "<th>Foto de Perfil: </th>";
                         echo "<td>" . "<img src= $foto >" . "</td>";
@@ -89,6 +90,7 @@
                         echo "<td class='modificar'> <a href='modificar.php'> Modificar </a> </td>";  
                         echo "<td class='modificar'> <a href='contrasena.php'> Cambiar Contrasena </a> </td>";               
                     echo "</tr>"; 
+                //}
 
             } else { 
 
@@ -105,6 +107,7 @@
 
 
     <br>
+
 
 </body> 
 </html> 
