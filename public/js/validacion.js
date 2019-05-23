@@ -1,5 +1,13 @@
 function validarCamposObligatorios() {
+    var n=document.getElementById("mensajeNombres").value, 
+    a= document.getElementById("mensajeApellidos").value, 
+    c=document.getElementById("mensajeCorreo").value,
+    ct=document.getElementById("mensajeContrasena").value;
 
+    if(n=="" || a =="" || c =="" || ct ==""  ){
+        alert("Todos los campos son obligatorios");
+    return false;
+    }
     var bandera = false
     for (var i = 0; i < document.forms[0].length; i++) {
         var elemento = document.forms[0].elements[i];
@@ -27,12 +35,9 @@ function validarCamposObligatorios() {
             var bandera = false
         }
     }
-    if (bandera) {
-        alert('Llenar todos los campos correctamente')
-        return false
-    } else {
-        return true
-    }
+   
+    
+
     
 }
 

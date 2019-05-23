@@ -5,10 +5,10 @@
     <script type="text/javascript" src="../js/validacion.js"></script>
     <link rel="stylesheet" href="styles/style.css" type="text/css"/>
 </head> 
-<body> 
+<body id="fondo"> 
     <a href='login.html'>Tienes ya una cuenta? ir a Iniciar Sesion</a>
-
-    <form id="nuevo_usuario" method="POST" onsubmit="return validarCamposObligatorios()" action="../controladores/crear_usuario.php" enctype="multipart/form-data" >
+    <br>
+    <form   id="nuevo_usuario" method="POST" onsubmit="return validarCamposObligatorios()" action="../controladores/crear_usuario.php" enctype="multipart/form-data" >
  
         <label for="nombres">Nombres (*)</label> 
         <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres..." >
