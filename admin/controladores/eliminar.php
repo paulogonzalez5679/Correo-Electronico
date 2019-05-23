@@ -14,7 +14,7 @@
     $sqlMen = "UPDATE mensaje SET men_eliminado = 1 WHERE men_id = $idMen";
 
     if ($conn->query($sqlMen) === TRUE) {             
-        echo "Eliminado logico Correcto";      
+        echo "Eliminado Correcto";      
     } else {             
         echo "Error al modificar";
         echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>";           
