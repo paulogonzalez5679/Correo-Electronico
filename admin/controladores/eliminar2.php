@@ -14,7 +14,7 @@
     $sqlUs = "UPDATE usuario SET usu_eliminado = 1 WHERE usu_id = $idUs";
 
     if ($conn->query($sqlUs) === TRUE) {             
-        echo "Eliminado logico Correcto";      
+        echo "Eliminado Correcto";      
     } else {             
         echo "Error al eliminar";
         echo "<p class='error'>Error: " . mysqli_error($conn) . "</p>";           
