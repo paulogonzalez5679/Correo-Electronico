@@ -119,15 +119,5 @@
     </table>
 
     <br>
-
-    <footer>
-        &#8226; &nbsp; Pedro Jose Ortiz Solis &nbsp; &#8226; 
-        &nbsp; Universidad Politécnica Salesiana &nbsp; &#8226;
-        <a href="mailto:portizs2@est.ups.edu.ec">portizs2@est.ups.edu.ec</a> &nbsp; &#8226;
-        <a href="tel:+593991936486">(099) 193-6486</a> &#8226;
-        <br>
-        &#8226; &nbsp; &#9400; Todos los derechos reservados. &nbsp; &#8226;
-    </footer>
-
 </body> 
 </html> 
